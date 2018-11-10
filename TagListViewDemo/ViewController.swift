@@ -33,6 +33,7 @@ class ViewController: UIViewController, TagListViewDelegate {
         tagView.onTap = { tagView in
             print("Don’t tap me!")
         }
+        tagListView.setSelectedTag(tagView)
 
         tagListView.insertTag("This should be the third tag", at: 2)
         

@@ -400,6 +400,16 @@ open class TagListView: UIView {
     open func selectedTags() -> [TagView] {
         return tagViews.filter { $0.isSelected }
     }
+  
+    open func setSelectedTag(_ tagView: TagView) {
+      for tag in tagViews {
+        if tag == tagView {
+          tag.isSelected = true
+        } else {
+          tag.isSelected = false
+        }
+      }
+    }
     
     // MARK: - Events
     
