@@ -174,7 +174,7 @@ open class TagView: UIButton {
         addSubview(removeButton)
         removeButton.tagView = self
         
-        let longPress = UITapGestureRecognizer(target: self, action: #selector(self.longPress))
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress))
         self.addGestureRecognizer(longPress)
     }
     
